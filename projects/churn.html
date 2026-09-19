@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Churn Prediction | Gladys Odura Temeng</title>
+
+    <meta name="description"
+          content="Customer Churn Prediction machine learning project by Gladys Odura Temeng.">
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+                Gladys Odura Temeng
+            </a>
+
+            <nav>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- PROJECT HERO -->
+        <section class="project-hero">
+
+            <div class="container">
+
+                <p class="section-label">
+                    MACHINE LEARNING PROJECT
+                </p>
+
+                <h1>
+                    Customer Churn Prediction
+                </h1>
+
+                <p class="project-hero-description">
+                    A machine-learning classification project focused on
+                    predicting customer churn through data preparation,
+                    exploratory analysis, model comparison, hyperparameter
+                    tuning, and Streamlit deployment.
+                </p>
+
+                <div class="project-actions">
+
+                    <a
+                        href="https://github.com/GladysOduraTemeng/customer-churn-prediction"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn primary-btn"
+                    >
+                        View on GitHub →
+                    </a>
+
+                    <a
+                        href="../index.html#projects"
+                        class="btn secondary-btn"
+                    >
+                        ← Back to Projects
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT OVERVIEW -->
+        <section class="section">
+
+            <div class="container">
+
+                <div class="project-detail-grid">
+
+                    <div>
+
+                        <p class="section-label">
+                            OVERVIEW
+                        </p>
+
+                        <h2>
+                            Project Overview
+                        </h2>
+
+                        <p>
+                            Customer churn occurs when customers stop using
+                            a company's products or services. This project
+                            explores how machine learning can be used to
+                            identify customers who may be at risk of leaving.
+                        </p>
+
+                        <p>
+                            I worked through the complete machine-learning
+                            workflow, including data inspection, data
+                            preparation, exploratory analysis, model training,
+                            evaluation, hyperparameter tuning, and deployment.
+                        </p>
+
+                    </div>
+
+
+                    <div class="project-info-card">
+
+                        <div>
+                            <span>Dataset</span>
+                            <strong>1,000 records</strong>
+                        </div>
+
+                        <div>
+                            <span>Features</span>
+                            <strong>10 columns</strong>
+                        </div>
+
+                        <div>
+                            <span>Problem Type</span>
+                            <strong>Classification</strong>
+                        </div>
+
+                        <div>
+                            <span>Deployment</span>
+                            <strong>Streamlit</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- OBJECTIVE -->
+        <section class="section alternate">
+
+            <div class="container">
+
+                <p class="section-label">
+                    OBJECTIVE
+                </p>
+
+                <h2>
+                    What I Set Out to Do
+                </h2>
+
+                <div class="detail-card">
+
+                    <p>
+                        The main objective was to develop a classification
+                        workflow capable of predicting whether a customer
+                        would churn based on available customer information.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Inspect and understand the dataset
+                        </li>
+
+                        <li>
+                            Identify and address data-quality issues
+                        </li>
+
+                        <li>
+                            Explore relationships within the data
+                        </li>
+
+                        <li>
+                            Train multiple classification algorithms
+                        </li>
+
+                        <li>
+                            Compare model performance
+                        </li>
+
+                        <li>
+                            Tune selected models using GridSearchCV
+                        </li>
+
+                        <li>
+                            Deploy a trained model using Streamlit
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DATA PREPARATION -->
+        <section class="section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    DATA PREPARATION
+                </p>
+
+                <h2>
+                    Preparing the Data
+                </h2>
+
+                <p>
+                    Before training the models, I inspected the dataset to
+                    understand its structure and identify potential data
+                    quality issues.
+                </p>
+
+                <div class="project-stats">
+
+                    <div class="stat-card">
+                        <strong>1,000</strong>
+                        <span>Records</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>10</strong>
+                        <span>Columns</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>297</strong>
+                        <span>Missing Values in InternetService</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <strong>0</strong>
+                        <span>Duplicate Records Found</span>
+                    </div>
+
+                </div>
+
+                <p>
+                    The <strong>InternetService</strong> variable contained
+                    297 missing values, which were handled during the data
+                    preparation process. I also checked for duplicate records
+                    and found none.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MODELS -->
+        <section class="section alternate">
+
+            <div class="container">
+
+                <p class="section-label">
+                    MODEL DEVELOPMENT
+                </p>
+
+                <h2>
+                    Models Evaluated
+                </h2>
+
+                <p>
+                    I trained and evaluated several classification algorithms
+                    to compare their performance on the churn prediction task.
+                </p>
+
+
+                <div class="model-grid">
+
+                    <div class="model-card">
+
+                        <h3>
+                            Logistic Regression
+                        </h3>
+
+                        <strong>
+                            92.5%
+                        </strong>
+
+                        <p>
+                            Test accuracy
+                        </p>
+
+                    </div>
+
+
+                    <div class="model-card">
+
+                        <h3>
+                            K-Nearest Neighbors
+                        </h3>
+
+                        <strong>
+                            87.0%
+                        </strong>
+
+                        <p>
+                            Test accuracy
+                        </p>
+
+                    </div>
+
+
+                    <div class="model-card">
+
+                        <h3>
+                            Support Vector Classifier
+                        </h3>
+
+                        <strong>
+                            91.5%
+                        </strong>
+
+                        <p>
+                            GridSearchCV result
+                        </p>
+
+                    </div>
+
+
+                    <div class="model-card">
+
+                        <h3>
+                            Decision Tree
+                        </h3>
+
+                        <strong>
+                            82.5%
+                        </strong>
+
+                        <p>
+                            GridSearchCV result
+                        </p>
+
+                    </div>
+
+
+                    <div class="model-card">
+
+                        <h3>
+                            Random Forest
+                        </h3>
+
+                        <strong>
+                            87.0%
+                        </strong>
+
+                        <p>
+                            GridSearchCV result
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HYPERPARAMETER TUNING -->
+        <section class="section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    MODEL TUNING
+                </p>
+
+                <h2>
+                    Hyperparameter Optimization
+                </h2>
+
+                <p>
+                    GridSearchCV was used to search through combinations of
+                    hyperparameters for selected models rather than manually
+                    choosing the final values.
+                </p>
+
+
+                <div class="detail-card">
+
+                    <h3>
+                        Tuned Decision Tree
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <strong>Criterion:</strong> Entropy
+                        </li>
+
+                        <li>
+                            <strong>Maximum depth:</strong> 30
+                        </li>
+
+                        <li>
+                            <strong>Minimum samples per leaf:</strong> 4
+                        </li>
+
+                        <li>
+                            <strong>Minimum samples to split:</strong> 5
+                        </li>
+
+                        <li>
+                            <strong>Splitter:</strong> Random
+                        </li>
+
+                    </ul>
+
+                    <p>
+                        These values were selected by GridSearchCV based on
+                        the parameter combinations evaluated during tuning.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEPLOYMENT -->
+        <section class="section alternate">
+
+            <div class="container">
+
+                <p class="section-label">
+                    DEPLOYMENT
+                </p>
+
+                <h2>
+                    Streamlit Application
+                </h2>
+
+                <p>
+                    The project includes a Streamlit application that
+                    provides an interface for interacting with the trained
+                    machine-learning model.
+                </p>
+
+                <p>
+                    The model saved for deployment was the tuned Decision Tree
+                    selected during the model-tuning workflow.
+                </p>
+
+                <div class="tags">
+
+                    <span>Python</span>
+                    <span>Scikit-learn</span>
+                    <span>Streamlit</span>
+                    <span>Pickle</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNOLOGIES -->
+        <section class="section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    TECHNOLOGIES
+                </p>
+
+                <h2>
+                    Tools & Technologies
+                </h2>
+
+                <div class="skills-grid">
+
+                    <div>
+                        <h3>Programming</h3>
+                        <p>Python</p>
+                    </div>
+
+                    <div>
+                        <h3>Data Analysis</h3>
+                        <p>Pandas · NumPy</p>
+                    </div>
+
+                    <div>
+                        <h3>Machine Learning</h3>
+                        <p>Scikit-learn</p>
+                    </div>
+
+                    <div>
+                        <h3>Visualization</h3>
+                        <p>Matplotlib · Seaborn</p>
+                    </div>
+
+                    <div>
+                        <h3>Deployment</h3>
+                        <p>Streamlit</p>
+                    </div>
+
+                    <div>
+                        <h3>Development</h3>
+                        <p>Jupyter Notebook · VS Code · Git · GitHub</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEARNING -->
+        <section class="section alternate">
+
+            <div class="container">
+
+                <p class="section-label">
+                    LEARNING OUTCOMES
+                </p>
+
+                <h2>
+                    What I Learned
+                </h2>
+
+                <div class="detail-card">
+
+                    <ul>
+
+                        <li>
+                            How to inspect and prepare a real dataset for
+                            machine-learning workflows.
+                        </li>
+
+                        <li>
+                            How different classification algorithms can
+                            produce different results on the same dataset.
+                        </li>
+
+                        <li>
+                            How GridSearchCV can be used for systematic
+                            hyperparameter tuning.
+                        </li>
+
+                        <li>
+                            The importance of separating model performance
+                            evaluation from deployment decisions.
+                        </li>
+
+                        <li>
+                            How to move from a notebook-based model to a
+                            simple interactive Streamlit application.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+        <section class="project-final">
+
+            <div class="container">
+
+                <p class="section-label">
+                    PROJECT REPOSITORY
+                </p>
+
+                <h2>
+                    Explore the full project
+                </h2>
+
+                <p>
+                    View the notebook, implementation, and project files
+                    on GitHub.
+                </p>
+
+                <a
+                    href="https://github.com/GladysOduraTemeng/customer-churn-prediction"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn primary-btn"
+                >
+                    Open GitHub Repository →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Gladys Odura Temeng. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
